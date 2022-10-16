@@ -38,6 +38,8 @@ struct proc {
 	/*
 	* LAB1: you may need to add some new fields here
 	*/
+	unsigned int syscall_times[500];
+    int start_running_time;   // 进入running状态的开始时间，没run过把时间设为-1。
 };
 
 /*
